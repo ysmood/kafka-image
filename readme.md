@@ -8,7 +8,7 @@ Properly start and stop the process of kafka and zookeeper as a single node for 
 ```yaml
 services:
   kafka:
-    image: ysmood/kafka:1.0.3
+    image: ysmood/kafka
     environment:
       KAFKA_ADVERTISED_HOST_NAME: localhost # This required for mac-docker
 ```
@@ -18,6 +18,6 @@ services:
 ```yaml
 test:
   services:
-    - name: ysmood/kafka:1.0.3
+    - name: ysmood/kafka
       alias: kafka
 ```
