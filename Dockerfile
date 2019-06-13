@@ -21,6 +21,10 @@ COPY --from=builder /go/bin/run /bin
 
 ENV PATH /app/bin:$PATH
 WORKDIR /app
+
+# The `exec` here is used to prevent sh from traping os signal.
+# Different docker base images have different versions of sh, they
+# behaves different when handling child process.
 CMD exec run
 
 EXPOSE 9092
