@@ -31,7 +31,7 @@ func main() {
 
 func configKafkaViaEnvs(path string) string {
 	host := os.Getenv("KAFKA_ADVERTISED_HOST_NAME")
-	conf, err := kit.ReadStringFile("config/server.properties")
+	conf, err := kit.ReadString("config/server.properties")
 	kit.E(err)
 
 	path += ".env"

@@ -45,7 +45,7 @@ func build(test, deploy bool) {
 			tag = "ysmood/kafka"
 		}
 
-		dockerfileTpl, err := kit.ReadStringFile("Dockerfile")
+		dockerfileTpl, err := kit.ReadString("Dockerfile")
 		kit.E(err)
 		dockerfile := kit.S(dockerfileTpl,
 			"kafka_version", t.kafka,
