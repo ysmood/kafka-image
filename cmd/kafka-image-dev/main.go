@@ -1,7 +1,7 @@
 package main
 
 import (
-	kit "github.com/ysmood/gokit"
+	"github.com/ysmood/kit"
 )
 
 func main() {

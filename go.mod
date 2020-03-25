@@ -1,5 +1,5 @@
 module run
 
-go 1.12
+go 1.14
 
-require github.com/ysmood/gokit v0.11.3
+require github.com/ysmood/kit v0.22.2
