@@ -1,8 +1,8 @@
 
 # Kafka Docker Image
 
-Properly start and stop the process of kafka and zookeeper as a single node for development use.
-Other popular images like `wurstmeister/kafka` and `spotify/kafka` doesn't work well when used for development.
+Properly start and stop the process of kafka and zookeeper as a single node for development usage.
+Other popular images like `wurstmeister/kafka` and `spotify/kafka` doesn't work well when being used for development.
 
 ## Install
 
